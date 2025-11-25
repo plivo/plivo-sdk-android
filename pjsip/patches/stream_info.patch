@@ -1,0 +1,13 @@
+--- stream_info.c	2017-06-03 14:52:34.000000000 +0530
++++ stream_info1.c	2020-01-23 16:39:02.000000000 +0530
+@@ -54,9 +54,7 @@
+     if (!local_channel_cnt) local_channel_cnt = *channel_cnt;
+ 
+     for (i = 0; i < enc_fmtp->cnt; ++i) {
+-	if (!pj_stricmp2(&enc_fmtp->param[i].name, "maxplaybackrate")) {
+-	    enc_clock_rate = (unsigned)pj_strtoul(&enc_fmtp->param[i].val);
+-	} else if (!pj_stricmp2(&enc_fmtp->param[i].name, "stereo")) {
++	if (!pj_stricmp2(&enc_fmtp->param[i].name, "stereo")) {
+ 	    enc_channel_cnt = (unsigned)pj_strtoul(&enc_fmtp->param[i].val);
+ 	    enc_channel_cnt = (enc_channel_cnt > 0) ? 2 : 1;
+ 	}

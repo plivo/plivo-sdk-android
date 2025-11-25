@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.plivo.endpoint</groupId>
+  <artifactId>endpoint</artifactId>
+  <versioning>
+    <release>2.0.19</release>
+    <versions>
+      <version>2.0.19</version>
+    </versions>
+    <lastUpdated>20210706121716</lastUpdated>
+  </versioning>
+</metadata>

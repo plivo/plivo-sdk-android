@@ -1,0 +1,14 @@
+---
+parent: central
+serviceName: plivo-androidsdk
+language: android-sdk
+build:
+  command: |
+      . /tmp/.env
+      sh ./gen_openssl.sh
+      sh ./gen_pjsip.sh
+      sh ./gen_jni.sh
+      bash ./gen_endpoint.sh
+secrets:
+  files:
+    SONATYPE_SECRET_RING_FILE: "secring.gpg"
